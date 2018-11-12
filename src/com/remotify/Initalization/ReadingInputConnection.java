@@ -34,7 +34,6 @@ public class ReadingInputConnection {
 					case "LiveScreenShot":
 						liveScreenShot=new LiveScreenShot();
 						liveScreenShot.running=true;
-						System.out.println("YES");
 						liveScreenShot.start();
 
 						
@@ -42,7 +41,7 @@ public class ReadingInputConnection {
 					case "Abhi AA RAha Hai":
 						
 						break;
-						
+					
 						
 				}
 				
