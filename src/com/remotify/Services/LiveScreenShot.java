@@ -1,12 +1,10 @@
 package com.remotify.Services;
 
-import java.awt.AWTException;
 import java.awt.Rectangle;
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
 import java.io.DataOutputStream;
-import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
@@ -17,20 +15,17 @@ public class LiveScreenShot extends Thread {
 	public volatile boolean running=false;
 
 	DataOutputStream oos=null;
+	Robot robot = null;
+	
 	public LiveScreenShot()
 	{
 		oos=new DataOutputStream(InitalizingServices.getOutputStream());
+		
 	}
 	
 	@Override
 	public void run() {
-		Robot robot = null;
-		try {
-			robot = new Robot();
-		} catch (AWTException e1) {
-		
-			e1.printStackTrace();
-		}
+		robot=InitalizingServices.getRobot();
 		Rectangle rectangle=new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
 		while(running){
 					BufferedImage image=robot.createScreenCapture(rectangle);
