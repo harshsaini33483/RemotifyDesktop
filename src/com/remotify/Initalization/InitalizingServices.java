@@ -3,7 +3,8 @@ import java.awt.Robot;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import com.remotify.Services.Power;
+import com.remotify.Services.Keyboard;
+
 import com.remotify.connections.*;
 
 public class InitalizingServices{
@@ -12,7 +13,8 @@ public class InitalizingServices{
 	private static InputStream inputStream=null;
 	private static OutputStream outputStream=null;
 	private static Robot robot=null;
-	private static Power power=null;
+
+	private static Keyboard keyboard=null;
 	/*
 	 *	Define All Services Variable 
 	 * 
@@ -31,7 +33,9 @@ public class InitalizingServices{
 			
 			e.printStackTrace();
 		}
-
+		keyboard=new Keyboard(robot);
+		
+		
 		/*
 		 * Initialize all the services variable
 		 * 
@@ -50,6 +54,11 @@ public class InitalizingServices{
 	}
 	public static InputStream getInputStream() {
 		return inputStream;
+	}
+
+
+	public static Keyboard getKeyboard() {
+		return keyboard;
 	}
 	
 	

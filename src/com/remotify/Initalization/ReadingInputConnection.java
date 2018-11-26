@@ -3,6 +3,7 @@ package com.remotify.Initalization;
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 
+import com.remotify.Services.Keyboard;
 import com.remotify.Services.LiveScreenShot;
 import com.remotify.Services.Power;
 import com.remotify.connections.InitConnection;
@@ -36,8 +37,6 @@ public class ReadingInputConnection {
 						liveScreenShot=new LiveScreenShot();
 						liveScreenShot.running=true;
 						liveScreenShot.start();
-
-						
 						break;
 					case "CMDCommands":
 						
@@ -45,7 +44,10 @@ public class ReadingInputConnection {
 					case "Cortana":
 						
 						break;
-					case "Keyboard":
+					case "KeyBoard":
+						Keyboard k=InitalizingServices.getKeyboard();
+						k.changeRunning();
+						k.startKeyStrokes();
 						
 						break;
 					case "LiveScreenMouse":
@@ -60,7 +62,8 @@ public class ReadingInputConnection {
 					case "Power":
 						new Power().waitingForInput();
 						break;
-					
+					default:
+						System.out.println("Wring");
 						
 				}
 				
