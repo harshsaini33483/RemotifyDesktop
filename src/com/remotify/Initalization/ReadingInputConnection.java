@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.DataInputStream;
 
 import com.remotify.Services.LiveScreenShot;
+import com.remotify.Services.Power;
 import com.remotify.connections.InitConnection;
 import com.remotify.exceptionmy.CloseException;
 
@@ -38,8 +39,26 @@ public class ReadingInputConnection {
 
 						
 						break;
-					case "Abhi AA RAha Hai":
+					case "CMDCommands":
 						
+						break;
+					case "Cortana":
+						
+						break;
+					case "Keyboard":
+						
+						break;
+					case "LiveScreenMouse":
+						
+						break;
+					case "Mouse":
+						
+						break;
+					case "MusicGroove":
+						
+						break;
+					case "Power":
+						new Power().waitingForInput();
 						break;
 					
 						

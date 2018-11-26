@@ -2,6 +2,8 @@ package com.remotify.Initalization;
 import java.awt.Robot;
 import java.io.InputStream;
 import java.io.OutputStream;
+
+import com.remotify.Services.Power;
 import com.remotify.connections.*;
 
 public class InitalizingServices{
@@ -10,6 +12,7 @@ public class InitalizingServices{
 	private static InputStream inputStream=null;
 	private static OutputStream outputStream=null;
 	private static Robot robot=null;
+	private static Power power=null;
 	/*
 	 *	Define All Services Variable 
 	 * 
@@ -22,10 +25,13 @@ public class InitalizingServices{
 		inputStream=InitConnection.getInputStream();
 		try {
 			robot=new Robot();
+			//power=new Power(robot);
+
 		} catch (Exception e) {
 			
 			e.printStackTrace();
 		}
+
 		/*
 		 * Initialize all the services variable
 		 * 

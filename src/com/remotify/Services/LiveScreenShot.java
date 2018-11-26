@@ -31,8 +31,9 @@ public class LiveScreenShot extends Thread {
 					BufferedImage image=robot.createScreenCapture(rectangle);
 
 					try{
+						
 						ImageIO.write(image,"jpeg",oos);
-						Thread.sleep(100);
+						Thread.sleep(50);
 					}
 					catch(Exception e){
 						try {
