@@ -4,7 +4,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 import com.remotify.Services.Keyboard;
-
+import com.remotify.Services.Mouse;
 import com.remotify.connections.*;
 
 public class InitalizingServices{
@@ -15,6 +15,8 @@ public class InitalizingServices{
 	private static Robot robot=null;
 
 	private static Keyboard keyboard=null;
+	private static Mouse mouse=null;
+	
 	/*
 	 *	Define All Services Variable 
 	 * 
@@ -35,6 +37,7 @@ public class InitalizingServices{
 		}
 		keyboard=new Keyboard(robot);
 		
+		mouse=new Mouse(robot);
 		
 		/*
 		 * Initialize all the services variable
@@ -61,5 +64,8 @@ public class InitalizingServices{
 		return keyboard;
 	}
 	
+	public static Mouse getMouse() {
+		return mouse;
+	}
 	
 }

@@ -5,6 +5,7 @@ import java.io.DataInputStream;
 
 import com.remotify.Services.Keyboard;
 import com.remotify.Services.LiveScreenShot;
+import com.remotify.Services.Mouse;
 import com.remotify.Services.Power;
 import com.remotify.connections.InitConnection;
 import com.remotify.exceptionmy.CloseException;
@@ -54,7 +55,9 @@ public class ReadingInputConnection {
 						
 						break;
 					case "Mouse":
-						
+						Mouse m=InitalizingServices.getMouse();
+						m.changeRunning();
+						m.startMouse();
 						break;
 					case "MusicGroove":
 						

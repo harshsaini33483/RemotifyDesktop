@@ -222,11 +222,146 @@ public class Keyboard {
 						keyReleased(KeyEvent.VK_SHIFT);
 						break;	
 						
+					case "UP":
+						keyPressed(KeyEvent.VK_UP);
+						 
+						keyReleased(KeyEvent.VK_UP);
+						break;	
+					
+					case "DOWN":
+						keyPressed(KeyEvent.VK_DOWN);
+						 
+						keyReleased(KeyEvent.VK_DOWN);
+						break;	
+						
+					case "LEFT":
+						keyPressed(KeyEvent.VK_LEFT);
+						 
+						keyReleased(KeyEvent.VK_LEFT);
+						break;	
+						
+					case "RIGHT":
+						keyPressed(KeyEvent.VK_RIGHT);
+						 
+						keyReleased(KeyEvent.VK_RIGHT);
+						break;	
+						
 					case "VK_ESCAPE":
 						keyPressed(KeyEvent.VK_ESCAPE);
 						 
 						keyReleased(KeyEvent.VK_ESCAPE);
 						break;	
+						
+						
+					case "VK_0":
+						keyPressed(KeyEvent.VK_0);
+						 
+						keyReleased(KeyEvent.VK_0);
+						break;	
+					case "VK_1":
+						keyPressed(KeyEvent.VK_1);
+						 
+						keyReleased(KeyEvent.VK_1);
+						break;	
+					case "VK_2":
+						keyPressed(KeyEvent.VK_2);
+						 
+						keyReleased(KeyEvent.VK_2);
+						break;	
+					case "VK_3":
+						keyPressed(KeyEvent.VK_3);
+						 
+						keyReleased(KeyEvent.VK_3);
+						break;	
+					case "VK_4":
+						keyPressed(KeyEvent.VK_4);
+						 
+						keyReleased(KeyEvent.VK_4);
+						break;	
+					case "VK_5":
+						keyPressed(KeyEvent.VK_5);
+						 
+						keyReleased(KeyEvent.VK_5);
+						break;	
+					case "VK_6":
+						keyPressed(KeyEvent.VK_6);
+						 
+						keyReleased(KeyEvent.VK_6);
+						break;	
+					case "VK_7":
+						keyPressed(KeyEvent.VK_7);
+						 
+						keyReleased(KeyEvent.VK_7);
+						break;	
+					case "VK_8":
+						keyPressed(KeyEvent.VK_8);
+						 
+						keyReleased(KeyEvent.VK_8);
+						break;	
+					case "VK_9":
+						keyPressed(KeyEvent.VK_9);
+						 
+						keyReleased(KeyEvent.VK_9);
+						break;	
+						
+						
+						
+					case "VK_*":
+						keyPressed(KeyEvent.VK_MULTIPLY);
+						 
+						keyReleased(KeyEvent.VK_MULTIPLY);
+						break;	
+					case "VK_+":
+						keyPressed(KeyEvent.VK_PLUS);
+						keyReleased(KeyEvent.VK_PLUS);
+						break;
+						
+						
+					case "VK_/":
+						keyPressed(KeyEvent.VK_DIVIDE);
+						 
+						keyReleased(KeyEvent.VK_DIVIDE);
+						break;	
+					case "VK_-":
+						keyPressed(KeyEvent.VK_MINUS);
+						 
+						keyReleased(KeyEvent.VK_MINUS);
+						break;	
+							
+						
+						
+						
+						
+						
+					case "(":
+						keyPressed(KeyEvent.VK_LEFT_PARENTHESIS);
+						 
+						keyReleased(KeyEvent.VK_LEFT_PARENTHESIS);
+						break;	
+					case ")":
+						keyPressed(KeyEvent.VK_RIGHT_PARENTHESIS);
+						 
+						keyReleased(KeyEvent.VK_RIGHT_PARENTHESIS);
+						break;	
+					case "{":
+						keyPressed(KeyEvent.VK_OPEN_BRACKET);
+						 
+						keyReleased(KeyEvent.VK_OPEN_BRACKET);
+						break;	
+					case "}":
+						keyPressed(KeyEvent.VK_CLOSE_BRACKET);
+						 
+						keyReleased(KeyEvent.VK_CLOSE_BRACKET);
+						break;	
+						
+						
+					case "CAPSLOCK":
+						keyPressed(KeyEvent.VK_CAPS_LOCK);
+						 
+						keyReleased(KeyEvent.VK_CAPS_LOCK);
+						break;	
+						
+						
 						
 					case "CTRL+ALT+T":
 						 	robot.keyPress(KeyEvent.VK_CONTROL);
